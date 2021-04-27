@@ -1,0 +1,33 @@
+{
+	"name": "teams-sample-app",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"NODE_VERSION": "14"
+		}
+	},
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"lldb.executable": "/usr/bin/lldb",
+		"files.watcherExclude": {
+			"**/target/**": true
+		}
+	},
+	"remoteUser": "codespaces",
+	"overrideCommand": false,
+	"workspaceMount": "source=${localWorkspaceFolder},target=/home/codespaces/workspace/${localWorkspaceFolderBasename},type=bind,consistency=cached",
+	"workspaceFolder": "/home/codespaces/workspace/${localWorkspaceFolderBasename}",
+	"mounts": [ "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind" ],
+	"runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+        "/workspaces/teamsfx-todo-app-codespace/.tools/teamsfx-extension-2.0.0-alpha.12.vsix"
+    ],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [3000, 5000, 7071]
+
+	// "postCreateCommand": "",
+	// "postCreateCommand": "",
+}

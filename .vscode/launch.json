@@ -1,0 +1,84 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Start and Launch to Frontend",
+            "type": "pwa-node",
+            "request": "launch",
+            "restart": true,
+            "preLaunchTask": "Start and Launch Frontend",
+            "postDebugTask": "Stop All Services",
+            "cascadeTerminateToConfigurations": [
+                "Start and Attach to Backend"
+            ],
+            "presentation": {
+                "group": "all",
+                "hidden": true
+            }
+        },
+        {
+            "name": "Launch Remote in CodeSpace",
+            "type": "pwa-node",
+            "request": "launch",
+            "preLaunchTask": "teamsfx: launch Teams web client (remote)"
+        },
+        {
+            "name": "Start and Attach to Frontend (Edge)",
+            "type": "pwa-msedge",
+            "request": "launch",
+            "url": "https://teams.microsoft.com/_#/l/app/${localTeamsAppId}?installAppPackage=true",
+            "preLaunchTask": "Start Frontend",
+            "postDebugTask": "Stop All Services",
+            "cascadeTerminateToConfigurations": [
+                "Start and Attach to Backend"
+            ],
+            "presentation": {
+                "group": "all",
+                "hidden": true
+            }
+        },
+        {
+            "name": "Start and Attach to Frontend (Chrome)",
+            "type": "pwa-chrome",
+            "request": "launch",
+            "url": "https://teams.microsoft.com/_#/l/app/${localTeamsAppId}?installAppPackage=true",
+            "preLaunchTask": "Start Frontend",
+            "postDebugTask": "Stop All Services",
+            "cascadeTerminateToConfigurations": [
+                "Start and Attach to Backend"
+            ],
+            "presentation": {
+                "group": "all",
+                "hidden": true
+            }
+        },
+        {
+            "name": "Start and Attach to Backend",
+            "type": "pwa-node",
+            "request": "attach",
+            "port": 9229,
+            "restart": true,
+            "preLaunchTask": "teamsfx: backend start",
+            "presentation": {
+                "group": "all",
+                "hidden": true
+            },
+            "internalConsoleOptions": "neverOpen"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Preview Local App in Codespace",
+            "configurations": [
+                "Start and Launch to Frontend",
+                "Start and Attach to Backend"
+            ],
+            "preLaunchTask": "Pre Debug Check",
+            "presentation": {
+                "group": "all",
+                "order": 1
+            },
+            "stopAll": true
+        }
+    ]
+}

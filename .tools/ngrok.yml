@@ -1,0 +1,17 @@
+authtoken: 1o0bKtEqluG2hvvCSDQH4BZt6av_4MciosWp2ysS712zNSz1Q
+tunnels:
+  tabs-app:
+    addr: 3000
+    proto: http
+    bind_tls: true
+    hostname: teamsfx-frontend.ngrok.io
+  auth-server:
+    addr: 5000
+    proto: http
+    bind_tls: true
+    subdomain: teamsfx-simpleauth
+  function:
+    addr: 7071
+    proto: http
+    bind_tls: true
+    hostname: teamsfx-api.ngrok.io

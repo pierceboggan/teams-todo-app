@@ -1,0 +1,224 @@
+#root>div {
+    background-color: #F3F2F1;
+}
+
+.toolbar {
+    height: 48px;
+    background: #F5F5F5;
+    box-shadow: 0px -1.2px 3.6px rgba(0, 0, 0, 0.11), 0px -6.4px 14.4px rgba(0, 0, 0, 0.13);
+    display: flex;
+}
+
+.toolbar .t1 {
+    margin-top: 18px;
+    margin-left: 26px;
+    margin-right: 20px;
+}
+
+.toolbar .t2 {
+    margin-top: 15px;
+    margin-right: 8px;
+}
+
+.toolbar .t3,
+.toolbar .t5 {
+    font-size: 14px;
+    line-height: 16px;
+    color: #242424;
+    margin-top: 14.5px;
+    margin-right: 12px;
+}
+
+.toolbar .t4 {
+    margin: 19px 8px auto auto;
+}
+
+.toolbar .t6 {
+    margin-top: 7px;
+    margin-right: 20px;
+}
+
+.flex-container {
+    display: flex;
+    height: calc(100% - 48px);
+    /* max-width: 1440px; */
+    margin: auto;
+}
+
+.todo-list {
+    margin-top: 5px;
+    width: 300px;
+    background: #F5F5F5;
+    border-right-style: solid;
+    border-color: #E0E0E0;
+    border-width: 1px;
+}
+
+.time {
+    display: flex;
+    height: 32px;
+    margin: 4px;
+    border-radius: 3px;
+    color: #A19F9D;
+}
+
+.time.active {
+    background: #FFFFFF;
+    color: #484644;
+}
+
+.active .time-icon {
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
+.time-icon {
+    margin-top: 10px;
+    margin-left: 18px;
+}
+
+.active .time-text {
+    margin-left: 6px;
+}
+
+.time-text {
+    margin-top: 6px;
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.todo-col {
+    width: 100%;
+    margin: 0 180px;
+}
+
+.todo {
+    max-width: 1500px;
+    margin: 40px auto;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.title-icon {
+    margin-top: 4px;
+    margin-right: 6px;
+}
+
+.title {
+    font-size: 28px;
+    line-height: 36px;
+    color: #1B1A1A;
+    font-weight: 600;
+}
+
+
+.add-button {
+    margin: 0 0 auto auto;
+}
+
+.items {
+    background-color: #FFF;
+    padding: 2px 0;
+}
+
+.item {
+    margin: 10px;
+    display: flex;
+}
+
+span {
+    display: inline-block;
+    margin: 5px;
+}
+
+.is-completed-input {
+    margin-right: 10px;
+}
+
+.is-completed-input span {
+    border-radius: 50%;
+}
+
+.description {
+    flex-grow: 1;
+}
+
+.description>div {
+    width: 100%;
+}
+
+.text input {
+    background-color: #FFF;
+}
+
+.text.is-completed input {
+    text-decoration-line: line-through;
+}
+
+.flag {
+    margin-top: 12px;
+}
+
+.action button,
+.action div {
+    background-color: #FFF;
+}
+
+.action i {
+    visibility: hidden;
+}
+
+.action span {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.add .action button {
+    background-color: #FFF;
+}
+
+.no-item {
+    margin-top: 10vh;
+}
+
+.no-item img {
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+.no-item h2,
+.no-item p {
+    text-align: center;
+}
+
+.auth {
+    margin-top: 30vh;
+}
+
+.auth .profile {
+    margin: auto;
+}
+
+.auth h2 {
+    text-align: center;
+}
+
+.auth button {
+    display: block;
+    margin: 32px auto;
+}
+
+@media only screen and (max-width: 820px) {
+    .flex-container {
+        display: block;
+    }
+
+    .profile-col {
+        height: auto;
+    }
+}
