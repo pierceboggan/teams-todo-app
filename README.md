@@ -1,4 +1,4 @@
-# Todo for Microsoft Teams
+# Todo Sample for Microsoft Teams
 Todo sample application for Microsoft Teams built with React and Azure.
 
 Image
