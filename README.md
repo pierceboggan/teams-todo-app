@@ -1,4 +1,8 @@
-# Getting Started with Todo Sample - React Tab and Azure backend with Azure SQL DB
+# Todo for Microsoft Teams
+Todo sample application for Microsoft Teams built with React and Azure.
+
+Image
+
 
 ## How the App Works
 ![Tab App Flow](images/TabAppFlow.jpg)
