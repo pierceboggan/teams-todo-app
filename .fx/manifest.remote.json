@@ -19,8 +19,8 @@
         "full": "This field is not used"
     },
     "description": {
-        "short": "Short description for teamsfxtodoapp.",
-        "full": "Full description of teamsfxtodoapp."
+        "short": "Todo app for Microsoft Teams built with React and Azure.",
+        "full": "Todo app for Microsoft Teams built with React and Azure."
     },
     "accentColor": "#FFFFFF",
     "bots": [],
