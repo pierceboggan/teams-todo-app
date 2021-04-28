@@ -1,22 +1,18 @@
 # Todo Sample for Microsoft Teams
 Todo sample application for Microsoft Teams built with React and Azure.
 
-Image
+![Todo Sample App](images/TodoApp.png)
 
 
-## How the App Works
+## Architecture
 ![Tab App Flow](images/TabAppFlow.jpg)
 
-### This sample app is a personal tab used to manage To-do List.
+* Frontend: React-based personal tabs application hosted with [Azure Storage](https://docs.microsoft.com/en-us/azure/storage/)
+* Backend: Serverless functions with [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/) and data storage with [Azure SQL](https://docs.microsoft.com/en-us/azure/azure-sql/) 
 
-- The frontend is a react tab hosting on [Azure Storage](https://docs.microsoft.com/en-us/azure/storage/).
-- Backend server is hosting on [Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/) and define the logic to manage todo list. 
-- And there is a [SQL DB](https://docs.microsoft.com/en-us/azure/azure-sql/) on Azure to persist data so that each time user open the tab can retrieve the same data.
-- The app also handles authenticattion and consent user to use Graph API to retrive the user's profile.
-
-## How to Run the App in CodeSpace
-### Prerequisite
-A GitHub CodeSpace account to create a CodeSpace instance from this sample app repo. You can reruest an early access from [here](https://github.com/features/codespaces).
+## Getting Started
+### Prerequisites
+A GitHub Codespace account is required to use Codespaces with this repository. You can reruest an early access from the [GitHub Codespaces beta](https://github.com/features/codespaces).
 
 1. In the sample app repo, click the **Code** drop-down menu, select **Open With CodeSpaces**, and then select **New CodeSpace**.
 
