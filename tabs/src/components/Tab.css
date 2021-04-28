@@ -218,6 +218,17 @@ span {
         display: block;
     }
 
+    .todo-list,
+    .t2,
+    .t3 {
+        display: none;
+    }
+
+    .todo-col {
+        margin: 0 15px;
+        width: auto;
+    }
+    
     .profile-col {
         height: auto;
     }
