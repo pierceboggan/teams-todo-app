@@ -22,7 +22,7 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-        "/workspaces/teamsfx-todo-app-codespace/.tools/teamsfx-extension-2.0.0-alpha.12.vsix"
+        "/workspaces/teams-todo-app/.tools/teamsfx-extension-2.0.0-alpha.12.vsix"
     ],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
