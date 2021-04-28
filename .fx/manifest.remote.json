@@ -15,11 +15,11 @@
         "outline": "outline.png"
     },
     "name": {
-        "short": "teamsfxtodoapp",
+        "short": "Todos",
         "full": "This field is not used"
     },
     "description": {
-        "short": "Todo app for Microsoft Teams built with React and Azure.",
+        "short": "Todos",
         "full": "Todo app for Microsoft Teams built with React and Azure."
     },
     "accentColor": "#FFFFFF",
