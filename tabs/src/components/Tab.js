@@ -360,7 +360,7 @@ class Tab extends React.Component {
                       Today ({this.state.items.length})
                   </div>
                     <div className="add-button">
-                      <PrimaryButton onClick={() => this.setState({ isAddingItem: true })}>+ Add task</PrimaryButton>
+                      <PrimaryButton onClick={() => this.setState({ isAddingItem: true })}>+ Add todo</PrimaryButton>
                     </div>
                   </div>
 
@@ -410,8 +410,8 @@ class Tab extends React.Component {
                         <img src={noItemimage} alt="no item" />
                       </div>
                       <div>
-                        <h2>No tasks</h2>
-                        <p>Add more tasks to make you day productive.</p>
+                        <h2>No todos</h2>
+                        <p>Add todos to maximize your productivity.</p>
                       </div>
                     </div>}
                   </div>
@@ -421,9 +421,8 @@ class Tab extends React.Component {
           </div>}
 
           {this.state.showLoginPage && <div className="auth">
-            <Profile userInfo={this.state.userInfo} profile={this.state.profile} />
-            <h2>Welcome to To Do List App!</h2>
-            <PrimaryButton onClick={() => this.loginBtnClick()}>Start</PrimaryButton>
+            <h2>Welcome to the Todos app!</h2>
+            <PrimaryButton onClick={() => this.loginBtnClick()}>Login</PrimaryButton>
           </div>}
         </div>
       </TeamsThemeContext.Provider >
