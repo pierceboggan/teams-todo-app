@@ -26,9 +26,6 @@ module.exports = async function (context, req, config) {
         const currentUser = await credential.getUserInfo();
         const objectId = currentUser.objectId;
 
-        // Get todo from request body
-        const todo = req.body.description;
-
         var query;
 
         switch (method) {
